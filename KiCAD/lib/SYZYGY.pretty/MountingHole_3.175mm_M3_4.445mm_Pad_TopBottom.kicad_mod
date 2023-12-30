@@ -1,0 +1,23 @@
+(footprint "MountingHole_3.175mm_M3_4.445mm_Pad_TopBottom" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 6bf08c2b-8ff4-4b69-b2e0-b268f60a9a30)
+  )
+  (fp_text value "MountingHole_3.175mm_M3_4.445mm_Pad_TopBottom" (at 0 -0.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 615ba0e3-212d-47d0-87ae-a63926a17bd8)
+  )
+  (fp_text user "${REFERENCE}" (at 0.3 0) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp e0df2639-a660-4579-9a4f-5f7157ed08b7)
+  )
+  (fp_circle (center 0 0) (end 2.25 0)
+    (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp 2f843df0-adbf-4b78-804e-c71f03b91b64))
+  (fp_circle (center 0 0) (end 2.5 0)
+    (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp d644a4c4-f9be-4ab5-9e57-280d8379da6e))
+  (pad "1" thru_hole circle (at 0 0) (size 3.6 3.6) (drill 3.175) (layers "*.Cu" "*.Mask") (tstamp b450d31c-3977-48c4-be61-7a270594c39c))
+  (pad "1" connect circle (at 0 0) (size 4.445 4.445) (layers "F.Cu" "F.Mask") (tstamp 7dca7fce-843d-4b5b-8128-030bafa340de))
+  (pad "1" connect circle (at 0 0) (size 4.445 4.445) (layers "B.Cu" "B.Mask") (tstamp 3e56a5e6-bdbb-4976-9fd1-8512a635dd64))
+)
