@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.2,
-          "height": 3.6,
-          "width": 3.6
+          "drill": 0.0,
+          "height": 3.7,
+          "width": 1.68
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -56,7 +56,15 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "extra_footprint|146719320|90663854|03261062-9f15-4a1d-99f2-db90b2129883|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|146869320|105913854|00000000-0000-0000-0000-000060664e52|00000000-0000-0000-0000-000000000000",
+        "via_dangling|147017920|98732264|00000000-0000-0000-0000-00006067ec94|00000000-0000-0000-0000-000000000000",
+        "via_dangling|147809320|98732264|00000000-0000-0000-0000-000060681ea1|00000000-0000-0000-0000-000000000000",
+        "via_dangling|187919320|93263854|95f07158-1283-4087-a911-50fd711bf471|00000000-0000-0000-0000-000000000000",
+        "via_dangling|193119320|113863854|bb9fc616-41d2-4d6e-a042-5a9cb36cee1e|00000000-0000-0000-0000-000000000000",
+        "via_dangling|198719320|118563854|183a2a75-0508-433c-b8f1-c6a0c822526b|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -178,10 +186,10 @@
       "track_widths": [
         0.0,
         0.127,
-        0.1524,
-        0.1778,
-        0.254,
-        1.524
+        0.15,
+        0.18,
+        0.25,
+        1.5
       ],
       "via_dimensions": [
         {
@@ -189,11 +197,7 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.3556,
-          "drill": 0.2032
-        },
-        {
-          "diameter": 0.508,
+          "diameter": 0.5,
           "drill": 0.254
         }
       ],
@@ -461,23 +465,46 @@
         "via_diameter": 0.5,
         "via_drill": 0.254,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2032,
+        "line_style": 0,
+        "microvia_diameter": 0.508,
+        "microvia_drill": 0.127,
+        "name": "75R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.5,
+        "via_drill": 0.254,
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "100R",
-        "pattern": "/TX*"
-      },
-      {
-        "netclass": "100R",
-        "pattern": "/RX*"
-      }
-    ]
+    "netclass_assignments": {
+      "/CLKN": "100R",
+      "/CLKP": "100R",
+      "/REFCLKN": "100R",
+      "/REFCLKP": "100R",
+      "/RX0N": "100R",
+      "/RX0P": "100R",
+      "/SDI/RxCN": "100R",
+      "/SDI/RxCP": "100R",
+      "/SDI/SDI_X": "75R",
+      "/SDI/SDO_X": "75R",
+      "/SDI/TxCN": "100R",
+      "/SDI/TxCP": "100R",
+      "/TX0N": "100R",
+      "/TX0P": "100R"
+    },
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {

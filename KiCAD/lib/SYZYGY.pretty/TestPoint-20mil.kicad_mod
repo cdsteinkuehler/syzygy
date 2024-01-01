@@ -1,10 +1,14 @@
-(module TestPoint-20mil (layer F.Cu) (tedit 6064F366)
-  (fp_text reference REF** (at 0 1.05) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
+(footprint "TestPoint-20mil" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr smd)
+  (fp_text reference "REF**" (at 0 1.05) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp b83038c6-51f1-4f53-9a59-ea662193c057)
   )
-  (fp_text value "TestPoint 20mil" (at 0 -0.9) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text value "TestPoint 20mil" (at 0 -0.9) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 5d4c8ded-6b2f-48f9-a8a4-ae76b414a42d)
   )
-  (pad 1 smd circle (at 0 0 270) (size 0.508 0.508) (layers F.Cu F.Mask)
-    (solder_mask_margin 0.0508))
+  (pad "1" smd circle (at 0 0 270) (size 0.508 0.508) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.0508) (tstamp 2cabb6ce-4559-480a-aaaa-20bbffca7bd6))
 )
